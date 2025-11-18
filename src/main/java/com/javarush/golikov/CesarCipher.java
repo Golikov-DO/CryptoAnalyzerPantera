@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CesarCipher {
-    private char[] alphabet;
+    private final char[] alphabet;
     Validator validator = new Validator();
 
     public CesarCipher(char[] alphabet) {
