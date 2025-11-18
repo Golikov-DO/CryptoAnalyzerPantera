@@ -9,7 +9,7 @@ public class Validator {
         // Проверка ключа
     }
     public boolean isFileExists(String filePath) {
-        return Files.exists(Path.of(filePath));
+        return !Files.exists(Path.of(filePath));
         // Проверка существования файла
     }
 }

@@ -44,13 +44,13 @@ public class ConsoleRunner {
         sc.nextLine();
         System.out.println("Введите полный путь к файлу для шифрования ");
         String fileToEncrypt = sc.nextLine();
-        if (!validator.isFileExists(fileToEncrypt)) {
+        if (validator.isFileExists(fileToEncrypt)) {
             System.out.println("По указанному пути файла нет");
             System.exit(0);
         }
         System.out.println("Введите полный путь к файлу для сохранения шифрования ");
         String outputFile = sc.nextLine();
-        if (!validator.isFileExists(outputFile)) {
+        if (validator.isFileExists(outputFile)) {
             try {
                 Files.createFile(Paths.get(outputFile));
             } catch (IOException e) {
