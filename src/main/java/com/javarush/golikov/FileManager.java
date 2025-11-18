@@ -7,7 +7,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class FileManager {
-    Validator validator = new Validator();
 
     // Логика чтения файла
     public String readFile(String filePath) {
