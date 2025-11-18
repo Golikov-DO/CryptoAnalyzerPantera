@@ -5,7 +5,7 @@ import java.nio.file.Path;
 
 public class Validator {
     public boolean isValidKey(int key, char[] alphabet) {
-        return (key > 0 && alphabet.length <= key);
+        return (key > 0 && key < alphabet.length);
         // Проверка ключа
     }
     public boolean isFileExists(String filePath) {
