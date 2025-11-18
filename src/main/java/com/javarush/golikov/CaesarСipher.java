@@ -9,4 +9,12 @@ public class CaesarСipher {
     public CaesarСipher(char[] inputText) {
         this.inputText = inputText;
     }
+    public String encrypt(String text, int shift) {
+        return null;
+        // Логика шифрования
+    }
+    public String decrypt(String encryptedText, int shift) {
+        return null;
+        // Логика расшифровки
+    }
 }
