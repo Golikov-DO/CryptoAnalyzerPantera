@@ -1,7 +1,11 @@
 package com.javarush.golikov;
 
+import java.util.Scanner;
+
 public class ConsoleRunner {
     public static void main(String[] args) {
+        int selectedItem = 0;
+        Scanner sc = new Scanner(System.in);
         System.out.println("-------------------------");
         System.out.println("1. Шифрование");
         System.out.println("2. Расшифровка с ключом");
@@ -9,5 +13,18 @@ public class ConsoleRunner {
         System.out.println("4. Статистический анализ");
         System.out.println("0. Выход");
         System.out.println("-------------------------");
+        selectedItem = sc.nextInt();
+        if (selectedItem < 0 || selectedItem > 4) {
+            System.out.println("Введено неверное значение");
+        } else {
+            switch (selectedItem) {
+                case 0 -> System.exit(0);
+                case 1 -> System.out.println("1");
+                case 2 -> System.out.println("2");
+                case 3 -> System.out.println("Не реализованно");
+                case 4 -> System.out.println("Не реализованно");
+            }
+            sc.close();
+        }
     }
 }
