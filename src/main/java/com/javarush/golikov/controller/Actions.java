@@ -1,6 +1,7 @@
 package com.javarush.golikov.controller;
 
 import com.javarush.golikov.exception.ApplicationExceptions;
+import com.javarush.golikov.menuComands.BruteForce;
 import com.javarush.golikov.menuComands.MenuCommands;
 import com.javarush.golikov.menuComands.Decoding;
 import com.javarush.golikov.menuComands.Encryption;
@@ -15,6 +16,7 @@ public class Actions {
     public Actions() {
         actionMap.put(0,new Encryption());
         actionMap.put(1,new Decoding());
+        actionMap.put(2, new BruteForce());
     }
 
     public MenuCommands findAction(int actionIndex) {

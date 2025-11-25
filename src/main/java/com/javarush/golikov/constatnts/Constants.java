@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Constants {
     private static final String ruAlphabet = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЬЭЮЯ";
-    private static final String specialCharacters = "\n.,”’:-!? ";
+    private static final String specialCharacters = "\n.,\":-!? ";
     
     public static final char[] ALPHABET = (ruAlphabet.toLowerCase() + specialCharacters).toCharArray();
     public static final String DEFAULT_FOLDER = System.getProperty("user.dir") + File.separator + "text" +  File.separator;
