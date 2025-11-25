@@ -5,7 +5,7 @@ import com.javarush.golikov.entite.Result;
 public class Decoding implements MenuCommands {
 
     @Override
-    public Result execute(String result) {
-        return null;
+    public Result execute(String[] parametrises) {
+        return new Result("Дешифрование завершено", "Ok");
     }
 }
