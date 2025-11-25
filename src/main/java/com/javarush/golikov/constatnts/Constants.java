@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Constants {
-    private static final String ruAlphabet = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЬЭЮЯ";
+    private static final String ruAlphabet = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
     private static final String specialCharacters = "\n.,\":-!? ";
     
     public static final char[] ALPHABET = (ruAlphabet.toLowerCase() + specialCharacters).toCharArray();
