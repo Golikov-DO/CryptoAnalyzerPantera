@@ -14,8 +14,8 @@ public class Actions {
     private final Map<Integer, MenuCommands> actionMap = new HashMap<>();
 
     public Actions() {
-        actionMap.put(0,new Encryption());
-        actionMap.put(1,new Decoding());
+        actionMap.put(0, new Encryption());
+        actionMap.put(1, new Decoding());
         actionMap.put(2, new BruteForce());
     }
 
